@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div> <ListGroup /> </div>
+      
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -19,7 +19,8 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      
+      <h1>Vite + React + Bootstrap</h1>
       <div><Message /></div>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
@@ -29,6 +30,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
+      <div> <ListGroup /> </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
