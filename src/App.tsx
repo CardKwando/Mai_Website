@@ -43,12 +43,10 @@ function App() {
       <div className="container" style={{ backgroundColor: 'red', borderRadius: '15px'}}>
         <div><Message /></div>
         <div style={{ marginBottom: '15px'}}>
-          <button style={{ borderRadius: '15px'}} onClick={() => setCount((count) => count + 1)}>
+          <button style={{ borderRadius: '15px' }} onClick={() => setCount((count) => count + 1)}>
             count is {count}
           </button>
-          <button style={{ borderRadius: '15px'}} onClick={() => setCount((count) => count = 0)}>
-            Reset Count
-          </button>
+          
         </div>
         <div className="card"> <ListGroup /> </div>
       </div>
