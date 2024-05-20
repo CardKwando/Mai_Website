@@ -13,7 +13,7 @@ function ListGroup() {
     const handleClick = (event: MouseEvent) => console.log(event);
 
     return (
-        <>
+        <div style={{ backgroundColor: 'lightgray', alignContent: 'center', textAlign: 'left', padding: '10px'}}>
             <h1>List</h1>
             {items.length === 0 && <p>There are no items</p>}
             <ul className="list group">
@@ -30,7 +30,7 @@ function ListGroup() {
                         {item} 
                     </li>))}
             </ul>
-        </>
+        </div>
     );
 }
 
