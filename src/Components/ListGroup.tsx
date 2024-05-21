@@ -18,7 +18,7 @@ function ListGroup() {
 
     return (
         <div style={{ backgroundColor: "lightgray}}"}}>
-            <h1>List Card</h1>
+            <h3>List Card</h3>
             {items.length === 0 && <p>There are no items</p>}
             <ul className="list group">
                 {items.map((item, index) => (

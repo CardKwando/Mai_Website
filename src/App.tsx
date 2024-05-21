@@ -5,7 +5,10 @@ import viteLogo from '/vite.svg'
 import bootstrap from './assets/bootstrap.svg'
 import patrickStar from "./assets/Pat_has_been_shooketh_2.jpeg";
 import background1 from "./assets/2034232.jpeg";
-import other1 from "./assets/other/ocean_pic.png";
+import cheese from "./assets/other/cheese.jpeg";
+import ocean from "./assets/other/ocean_pic.png";
+import eveningRide from "./assets/other/riding_evening.gif";
+import MAILogo from "./assets/MAI-Logo.svg";
 
 import './App.css'
 import Message from './Message';
@@ -106,8 +109,8 @@ function App() {
         <div className="rowC">
           <div className="card"><ListGroup /></div>
           <div className="card">
-            <h1>Image Card</h1>
-            <img src={other1} className="ocean1" alt="other1"/>
+            <h1 style={{textAlign: 'center'}}>CHEESE</h1>
+            <img src={cheese} className="cheese" alt="cheese slice"/>
           </div>
           <div className="card">
             <h3>Card 3</h3>
@@ -123,13 +126,18 @@ function App() {
         </div>
         <div className="rowC">
           <div className="card" >
-            <h3>Card 4</h3>
+            <h3>Ocean</h3>
+            <img src={ocean} className="ocean" alt="me in front of the ocean"/>
           </div>
           <div className="card">
             <h3>Card 5</h3>
+            <div style={{ display: 'flex', justifyContent: 'center', margin: 'auto', backgroundColor: 'lightgray', borderRadius: '50px', width: "200px", height: "200px"}}>
+              <img src={MAILogo} className="MAI" alt="MAI Logo"/>
+            </div>
           </div>
           <div className="card">
             <h3>Card 6</h3>
+            <img src={eveningRide} className="eveningRide" alt="Riding Evening"/>
           </div>
         </div>
       </div>
