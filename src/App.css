@@ -36,18 +36,38 @@
   }
 }
 
-.card {
-  padding: 1em;
-}
-
 .read-the-docs {
   color: #888;
+}
+
+.card {
+  padding: 1em;
+  text-align: left;
+  background-color: rgb(39, 38, 38);
+  width: 300px;
+  border-radius: 15px;
 }
 
 .container {
   max-width: 100%;
   text-align: center;
+  padding: 20px;
+  background-color: #f15a19c7;
+  color: white;
+  border-radius: 15px; 
 }
+
+.rowC{
+  display:flex; 
+  flex-direction:row;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
