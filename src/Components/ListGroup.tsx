@@ -3,9 +3,13 @@ import { MouseEvent } from 'react';
 
 function ListGroup() {
     let items = [
-        'Here',
-        'There',
-        'Nowhere',
+        'item1',
+        'item2',
+        'item3',
+        'item4',
+        'item5',
+        'item6',
+        'item7'
     ];
     const [selectedIndex, setSelectedIndex] = useState(-1);
 
@@ -13,8 +17,8 @@ function ListGroup() {
     const handleClick = (event: MouseEvent) => console.log(event);
 
     return (
-        <div style={{ backgroundColor: 'lightgray', alignContent: 'center', textAlign: 'left', padding: '10px'}}>
-            <h1>List</h1>
+        <div style={{ backgroundColor: "lightgray}}"}}>
+            <h3>List Card</h3>
             {items.length === 0 && <p>There are no items</p>}
             <ul className="list group">
                 {items.map((item, index) => (
