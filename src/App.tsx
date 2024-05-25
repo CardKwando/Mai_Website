@@ -51,7 +51,7 @@ function App() {
                 Dropdown
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="./test_page/">Other Page</a>
+                <a className="dropdown-item" href="/Mai_Website/test_page/">Other Page</a>
                 <a className="dropdown-item" href="#">Another action</a>
                 <div className="dropdown-divider"></div>
                 <a className="dropdown-item" href="#">Something else here</a>
