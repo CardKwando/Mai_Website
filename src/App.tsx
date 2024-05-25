@@ -16,7 +16,7 @@ import ListGroup from './Components/ListGroup';
 
 function App() {
   const [count, setCount] = useState(0)
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  //const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   //const [name, setName] = useState('')
   
   return (
@@ -27,23 +27,23 @@ function App() {
       backgroundRepeat: "no-repeat", 
       backgroundPosition: "center"
     }}>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="./">Navbar</a>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+        <a className="navbar-brand" href="#">Navbar</a>
         <button 
           className="navbar-toggler" 
-          type="button" data-toggle="collapse"
+          type="button" 
+          data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" 
           aria-controls="navbarSupportedContent" 
-          aria-expanded={isDropdownOpen} 
-          aria-label="Toggle navigation" 
-          onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+          aria-expanded="false" 
+          aria-label="Toggle navigation"> 
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className={`collapse navbar-collapse ${isDropdownOpen ? 'show' : ''}`} id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="./">Home <span className="sr-only">(current)</span></a>
+              <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
             </li>
 
             <li className="nav-item dropdown">
@@ -51,7 +51,7 @@ function App() {
                 Dropdown
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">Action</a>
+                <a className="dropdown-item" href="./test_page/">Other Page</a>
                 <a className="dropdown-item" href="#">Another action</a>
                 <div className="dropdown-divider"></div>
                 <a className="dropdown-item" href="#">Something else here</a>
@@ -90,11 +90,12 @@ function App() {
         </div>
       </div>
       
-      <div className="container" style={{ alignContent: 'center', 
-                                          backgroundColor: 'lightgray', 
-                                          width: '300px', 
-                                          height: '300px',
-                                          borderRadius: '100px'}}>
+      <div className="container" style={{ 
+        alignContent: 'center', 
+        backgroundColor: 'lightgray', 
+        width: '300px', 
+        height: '300px',
+        borderRadius: '100px'}}>
         <a>
           <img src={patrickStar} width={250} height={250} style={{ borderRadius: '75px'}} 
           className='Patrick Star' alt="Patrick"/>
@@ -131,7 +132,14 @@ function App() {
           </div>
           <div className="card">
             <h3>Card 5</h3>
-            <div style={{ display: 'flex', justifyContent: 'center', margin: 'auto', backgroundColor: 'lightgray', borderRadius: '50px', width: "200px", height: "200px"}}>
+            <div style={{ 
+              display: 'flex', 
+              justifyContent: 'center', 
+              margin: 'auto', 
+              backgroundColor: 'lightgray', 
+              borderRadius: '50px', 
+              width: "200px", 
+              height: "200px"}}>
               <img src={MAILogo} className="MAI" alt="MAI Logo"/>
             </div>
           </div>
