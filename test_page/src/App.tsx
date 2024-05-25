@@ -12,7 +12,7 @@ function App01() {
             <div>
                 <h1 >cheese Greater</h1>
             </div>
-            <button className="button" onClick={() => {window.location.href = "/"}}>
+            <button className="button" onClick={() => {window.location.href = "/Mai_Website"}}>
                 Home
             </button>
         </div>
